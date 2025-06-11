@@ -4,56 +4,55 @@ const events = [
   {
     id: 1,
     title: 'Kilpailu 2024',
-    thumbnail: './public/assets/logo1.png',
+    thumbnail: '/jylha-racing/assets/logo1.png',
     images: [
-      './public/assets/logo.png',
-      './public/assets/logo1.png',
-
+      '/jylha-racing/assets/logo1.png',
+       '/jylha-racing/assets/logo.png',
     ],
   },
   {
     id: 2,
-    title: 'Kesäkilpailu 2023',
-    thumbnail: './public/assets/logo.png',
+    title: 'Kilpailu 2023',
+    thumbnail: '/jylha-racing/assets/logo1.png',
     images: [
-      './public/assets/logo.png',
-      './public/assets/logo1.png',
+      '/jylha-racing/assets/logo1.png',
+       '/jylha-racing/assets/logo.png',
     ],
   },
- {
+  {
     id: 3,
-    title: 'Kesäkilpailu 11',
-    thumbnail: './public/assets/logo.png',
+    title: 'Kilpailu 2022',
+    thumbnail: '/jylha-racing/assets/logo1.png',
     images: [
-      './public/assets/logo.png',
-      './public/assets/logo1.png',
+      '/jylha-racing/assets/logo1.png',
+       '/jylha-racing/assets/logo.png',
     ],
   },
   {
     id: 4,
-    title: 'Kesäkilpailu 262',
-    thumbnail: './public/assets/logo.png',
+    title: 'Kilpailu 2021',
+    thumbnail: '/jylha-racing/assets/logo1.png',
     images: [
-      './public/assets/logo.png',
-      './public/assets/logo1.png',
+      '/jylha-racing/assets/logo1.png',
+       '/jylha-racing/assets/logo.png',
     ],
   },
   {
     id: 5,
-    title: 'Kesäkilpailu 31',
-    thumbnail: './public/assets/logo.png',
+    title: 'Kilpailu 2020',
+    thumbnail: '/jylha-racing/assets/logo1.png',
     images: [
-      './public/assets/logo1.png',
-      './public/assets/logo1.png',
+      '/jylha-racing/assets/logo1.png',
+       '/jylha-racing/assets/logo.png',
     ],
   },
   {
     id: 6,
-    title: 'Kesäkilpailu 12',
-    thumbnail: './public/assets/logo.png',
+    title: 'Kilpailu 2999',
+    thumbnail: '/jylha-racing/assets/logo1.png',
     images: [
-      './public/assets/logo.png',
-      './public/assets/logo1.png',
+      '/jylha-racing/assets/logo1.png',
+       '/jylha-racing/assets/logo.png',
     ],
   },
 ]
