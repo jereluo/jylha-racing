@@ -4,7 +4,7 @@ const events = [
   {
     id: 1,
     title: 'Kilpailu 2024',
-    thumbnail: '/jylha-racing/assets/logo1.png',
+    thumbnail: '/jylha-racing/assets/ks23.png',
     images: [
       '/jylha-racing/assets/logo1.png',
        '/jylha-racing/assets/logo.png',
@@ -15,7 +15,7 @@ const events = [
     title: 'Kilpailu 2023',
     thumbnail: '/jylha-racing/assets/logo1.png',
     images: [
-      '/jylha-racing/assets/logo1.png',
+      '/jylha-racing/assets/ks23.png',
        '/jylha-racing/assets/logo.png',
     ],
   },
