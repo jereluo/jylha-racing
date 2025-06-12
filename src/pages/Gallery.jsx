@@ -40,6 +40,17 @@ const events = [
         '/jylha-racing/assets/images/SyysSlalom2022/14.JPG',
     ],
   },
+  {
+    id: 3,
+    title: 'Sekalaisia kuvia',
+    thumbnail: '/jylha-racing/assets/thumbnails/seka.png',
+    images: [
+        '/jylha-racing/assets/images/Sekalaiset/1.jpeg',
+        '/jylha-racing/assets/images/Sekalaiset/2.jpg',
+        '/jylha-racing/assets/images/Sekalaiset/3.png',
+
+    ],
+  },
 ]
 
 function Gallery() {
