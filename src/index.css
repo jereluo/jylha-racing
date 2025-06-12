@@ -1,4 +1,3 @@
-/* index.css */
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 body {
@@ -26,14 +25,12 @@ html, body {
 .page-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* koko ruudun korkeus */
+  min-height: 100vh; 
 }
 
 .main-content {
-  flex: 1; /* vie tilan footerin ja navin väliltä */
+  flex: 1; 
 }
-
-
 
 .navbar {
   background-color: #111;
@@ -48,7 +45,6 @@ html, body {
   justify-content: space-between;
 }
 
-/* Toggle-nappi piilossa desktopissa */
 .nav-toggle {
   display: none;
   font-size: 2rem;
@@ -58,7 +54,6 @@ html, body {
   cursor: pointer;
 }
 
-/* Nav-list oletuksena vaakasuorassa rivissä */
 .nav-list {
   display: flex;
   gap: 2rem;
@@ -68,7 +63,6 @@ html, body {
   justify-content: center;
 }
 
-/* Linkkien perusmuotoilu */
 .nav-link {
   color: #ff3b3b;
   font-weight: 700;
@@ -89,7 +83,6 @@ html, body {
   box-shadow: 0 0 8px #ff3b3b;
 }
 
-/* Aktiivinen linkki */
 .nav-link.active {
   background-color: #ff1a1a;
   color: white;
@@ -97,7 +90,6 @@ html, body {
   box-shadow: 0 0 10px #ff1a1a;
 }
 
-/* --- RESPONSIIIVINEN NAV --- */
 @media (max-width: 768px) {
   .nav-toggle {
     display: block;
@@ -120,7 +112,6 @@ html, body {
     gap: 0.5rem;
   }
 
-  /* Kun menu on auki */
   .nav-list.open {
     max-height: 500px;
     transition: max-height 0.5s ease-in;
@@ -224,11 +215,9 @@ main {
   filter: grayscale(100%);
 }
 
-
-
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* 150px minimi, laajenee */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
   gap: 16px;
   padding: 16px; 
 }
@@ -242,8 +231,8 @@ main {
 
 .thumbnail {
   width: 100%;
-  aspect-ratio: 1 / 1; /* neliö */
-  object-fit: cover; /* leikkaa keskeltä, pitää kuvan mittasuhteet */
+  aspect-ratio: 1 / 1; 
+  object-fit: cover; 
   border-radius: 8px;
   cursor: pointer;
   box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
@@ -344,6 +333,7 @@ main {
 .popup-close:hover {
   color: #000000;
 }
+
 .hero-section {
   width: 100%;
   min-height: 90vh;
@@ -363,8 +353,8 @@ main {
   box-sizing: border-box;
   position: relative;
   z-index: 1;
-
 }
+
 .blurred-background {
   position: fixed; 
   top: 0; left: 0; right: 0; bottom: 0;
@@ -372,17 +362,16 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(20px);
+  filter: blur(13px);
   z-index: -1; 
 }
 
-/* Isommille näytöille tehdään rajaus ja suurennetaan sisältöä */
 @media (min-width: 1400px) {
   .hero-section {
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
-    padding: 4rem; /* enemmän tyhjää reunoille */
+    padding: 4rem; 
   }
 
   .hero-content {
@@ -492,14 +481,12 @@ html, body {
   background-color: #e53737;
 }
 
-
-/* SplashScreen-tyylit */
 .splash-screen {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgb(57, 159, 177);
+  background-color: rgb(204, 204, 204);
 }
 
 @keyframes spinZoomIn {
@@ -514,10 +501,9 @@ html, body {
 }
 
 .splash-logo {
-  width: 200px;
+  width: 300px;
   animation: spinZoomIn 1s ease-out forwards;
 }
-
 
 @keyframes fadeInZoom {
   0% {
