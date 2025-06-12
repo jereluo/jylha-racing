@@ -147,6 +147,74 @@ main {
 .popup-close:hover {
   color: #000000;
 }
+.hero-section {
+  width: 100%;
+  min-height: 90vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.full-width {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  position: relative;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden; 
+}
+
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  animation: fadeInZoom 1s ease-out forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #ff4a4a;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #e53737;
+}
+
 
 /* SplashScreen-tyylit */
 .splash-screen {
@@ -168,6 +236,11 @@ main {
   }
 }
 
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+}
 .splash-logo {
   width: 200px;
   animation: fadeInZoom 1s ease-out forwards;

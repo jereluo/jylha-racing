@@ -3,26 +3,47 @@ import { useState } from 'react'
 const events = [
   {
     id: 1,
-    title: 'Kilpailu 2024',
-    thumbnail: '/jylha-racing/assets/ks23.png',
+    title: 'XXX AKU Kevät23',
+    thumbnail: '/jylha-racing/assets/thumbnails/ks23.png',
     images: [
-      '/jylha-racing/assets/logo1.png',
-       '/jylha-racing/assets/logo.png',
+       '/jylha-racing/assets/images/KevätSlalom2023/1.jpg',
+       '/jylha-racing/assets/images/KevätSlalom2023/2.jpg',
+       '/jylha-racing/assets/images/KevätSlalom2023/3.jpg',
+       '/jylha-racing/assets/images/KevätSlalom2023/4.jpg',
+       '/jylha-racing/assets/images/KevätSlalom2023/5.jpg',
+       '/jylha-racing/assets/images/KevätSlalom2023/6.jpg',
+       '/jylha-racing/assets/images/KevätSlalom2023/7.jpg',
+       '/jylha-racing/assets/images/KevätSlalom2023/8.jpg',
+       '/jylha-racing/assets/images/KevätSlalom2023/9.jpg',
+       '/jylha-racing/assets/images/KevätSlalom2023/10.jpg',
+       '/jylha-racing/assets/images/KevätSlalom2023/11.jpg',
     ],
   },
   {
     id: 2,
-    title: 'Kilpailu 2023',
-    thumbnail: '/jylha-racing/assets/logo1.png',
+    title: 'XXVI AKU Syys22',
+    thumbnail: '/jylha-racing/assets/thumbnails/ss22.png',
     images: [
-      '/jylha-racing/assets/ks23.png',
-       '/jylha-racing/assets/logo.png',
+        '/jylha-racing/assets/images/SyysSlalom2022/1.JPG',
+        '/jylha-racing/assets/images/SyysSlalom2022/2.JPG',
+        '/jylha-racing/assets/images/SyysSlalom2022/3.JPG',
+        '/jylha-racing/assets/images/SyysSlalom2022/4.JPG',
+        '/jylha-racing/assets/images/SyysSlalom2022/5.JPG',
+        '/jylha-racing/assets/images/SyysSlalom2022/6.JPG',
+        '/jylha-racing/assets/images/SyysSlalom2022/7.JPG',
+        '/jylha-racing/assets/images/SyysSlalom2022/8.JPG',
+        '/jylha-racing/assets/images/SyysSlalom2022/9.JPG',
+        '/jylha-racing/assets/images/SyysSlalom2022/10.JPG',
+        '/jylha-racing/assets/images/SyysSlalom2022/11.JPG',
+        '/jylha-racing/assets/images/SyysSlalom2022/12.JPG',
+        '/jylha-racing/assets/images/SyysSlalom2022/13.JPG',
+        '/jylha-racing/assets/images/SyysSlalom2022/14.JPG',
     ],
   },
   {
     id: 3,
     title: 'Kilpailu 2022',
-    thumbnail: '/jylha-racing/assets/logo1.png',
+    thumbnail: '/jylha-racing/assets/thumbnails/ks23.png',
     images: [
       '/jylha-racing/assets/logo1.png',
        '/jylha-racing/assets/logo.png',
@@ -31,7 +52,7 @@ const events = [
   {
     id: 4,
     title: 'Kilpailu 2021',
-    thumbnail: '/jylha-racing/assets/logo1.png',
+    thumbnail: '/jylha-racing/assets/thumbnails/ks23.png',
     images: [
       '/jylha-racing/assets/logo1.png',
        '/jylha-racing/assets/logo.png',
@@ -40,7 +61,7 @@ const events = [
   {
     id: 5,
     title: 'Kilpailu 2020',
-    thumbnail: '/jylha-racing/assets/logo1.png',
+    thumbnail: '/jylha-racing/assets/thumbnails/ks23.png',
     images: [
       '/jylha-racing/assets/logo1.png',
        '/jylha-racing/assets/logo.png',
@@ -49,7 +70,7 @@ const events = [
   {
     id: 6,
     title: 'Kilpailu 2999',
-    thumbnail: '/jylha-racing/assets/logo1.png',
+    thumbnail: '/jylha-racing/assets/thumbnails/ks23.png',
     images: [
       '/jylha-racing/assets/logo1.png',
        '/jylha-racing/assets/logo.png',
