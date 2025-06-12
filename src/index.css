@@ -1,9 +1,10 @@
 /* index.css */
 
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   color: #222;
 }
 
@@ -17,11 +18,110 @@ img {
   height: auto;
 }
 
-nav {
-  background-color: #000;
-  color: white;
-  padding: 1rem;
+.navbar {
+  background-color: #111;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(255, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+/* Toggle-nappi piilossa desktopissa */
+.nav-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #ff3b3b;
+  cursor: pointer;
+}
+
+/* Nav-list oletuksena vaakasuorassa rivissä */
+.nav-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+/* Linkkien perusmuotoilu */
+.nav-link {
+  color: #ff3b3b;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: white;
+  background-color: #ff3b3b;
+  border-color: #ff3b3b;
+  box-shadow: 0 0 8px #ff3b3b;
+}
+
+/* Aktiivinen linkki */
+.nav-link.active {
+  background-color: #ff1a1a;
+  color: white;
+  border-color: #ff1a1a;
+  box-shadow: 0 0 10px #ff1a1a;
+}
+
+/* --- RESPONSIIIVINEN NAV --- */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #111;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    gap: 0.5rem;
+  }
+
+  /* Kun menu on auki */
+  .nav-list.open {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+  }
+
+  .nav-link {
+    padding: 1rem 2rem;
+    border: none;
+    border-bottom: 1px solid #ff3b3b;
+    display: block;
+  }
+
+  .nav-link:last-child {
+    border-bottom: none;
+  }
+}
+
+
 
 footer {
   background-color: #111;
@@ -160,6 +260,42 @@ main {
   padding: 2rem;
   color: white;
   text-align: center;
+   /* Rajataan leveys max 1400px ja keskitetään */
+  max-width: 100vw; /* oletus, mobiilissa koko leveys */
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+.blurred-background {
+  position: fixed; 
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('/assets/images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(20px);
+  z-index: -1; /* taustalle */
+}
+
+/* Isommille näytöille tehdään rajaus */
+@media (min-width: 1400px) {
+  .hero-section {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .full-width {
+    width: auto !important;
+    max-width: 1400px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+    overflow-x: visible !important;
+}
 }
 
 .full-width {
@@ -175,6 +311,25 @@ main {
 html, body {
   overflow-x: hidden; 
 }
+ 
+.hero-content h1 {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.7rem;
+  color: rgb(255, 255, 114);
+  text-transform: uppercase;
+}
+
+.hero-content h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #ffffffcc;
+  margin-top: 0;
+  letter-spacing: 0.05em;
+}
 
 
 .hero-content {
@@ -183,7 +338,7 @@ html, body {
   border-radius: 12px;
   max-width: 600px;
   width: 100%;
-  animation: fadeInZoom 1s ease-out forwards;
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -225,6 +380,23 @@ html, body {
   background-color: rgb(57, 159, 177);
 }
 
+@keyframes spinZoomIn {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.splash-logo {
+  width: 200px;
+  animation: spinZoomIn 1s ease-out forwards;
+}
+
+
 @keyframes fadeInZoom {
   0% {
     opacity: 0;
@@ -240,10 +412,6 @@ html, body {
   .hero-content h1 {
     font-size: 1.8rem;
   }
-}
-.splash-logo {
-  width: 200px;
-  animation: fadeInZoom 1s ease-out forwards;
 }
 
 @keyframes fadeOut {

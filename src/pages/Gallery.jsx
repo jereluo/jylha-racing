@@ -40,42 +40,6 @@ const events = [
         '/jylha-racing/assets/images/SyysSlalom2022/14.JPG',
     ],
   },
-  {
-    id: 3,
-    title: 'Kilpailu 2022',
-    thumbnail: '/jylha-racing/assets/thumbnails/ks23.png',
-    images: [
-      '/jylha-racing/assets/logo1.png',
-       '/jylha-racing/assets/logo.png',
-    ],
-  },
-  {
-    id: 4,
-    title: 'Kilpailu 2021',
-    thumbnail: '/jylha-racing/assets/thumbnails/ks23.png',
-    images: [
-      '/jylha-racing/assets/logo1.png',
-       '/jylha-racing/assets/logo.png',
-    ],
-  },
-  {
-    id: 5,
-    title: 'Kilpailu 2020',
-    thumbnail: '/jylha-racing/assets/thumbnails/ks23.png',
-    images: [
-      '/jylha-racing/assets/logo1.png',
-       '/jylha-racing/assets/logo.png',
-    ],
-  },
-  {
-    id: 6,
-    title: 'Kilpailu 2999',
-    thumbnail: '/jylha-racing/assets/thumbnails/ks23.png',
-    images: [
-      '/jylha-racing/assets/logo1.png',
-       '/jylha-racing/assets/logo.png',
-    ],
-  },
 ]
 
 function Gallery() {

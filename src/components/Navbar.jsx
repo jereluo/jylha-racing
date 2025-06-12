@@ -1,15 +1,27 @@
-import { Link } from 'react-router-dom'
+import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
   return (
-    <nav style={{ padding: '1rem', background: '#222', color: '#fff' }}>
-      <ul style={{ display: 'flex', gap: '1rem', listStyle: 'none' }}>
-        <li><Link to="/" style={{ color: '#fff' }}>Etusivu</Link></li>
-        <li><Link to="/gallery" style={{ color: '#fff' }}>Kuvagalleria</Link></li>
-        <li><Link to="/contact" style={{ color: '#fff' }}>Yhteystiedot</Link></li>
+    <nav className="navbar">
+      <button 
+        className="nav-toggle" 
+        aria-label="Toggle navigation"
+        onClick={toggleMenu}
+      >
+        &#9776;
+      </button>
+      <ul className={`nav-list ${isOpen ? 'open' : ''}`}>
+        <li><NavLink to="/" className="nav-link" onClick={() => setIsOpen(false)}>Etusivu</NavLink></li>
+        <li><NavLink to="/gallery" className="nav-link" onClick={() => setIsOpen(false)}>Kuvagalleria</NavLink></li>
+        <li><NavLink to="/contact" className="nav-link" onClick={() => setIsOpen(false)}>Yhteystiedot</NavLink></li>
       </ul>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
