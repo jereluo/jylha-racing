@@ -1,5 +1,5 @@
 /* index.css */
-
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 body {
   margin: 0;
@@ -17,6 +17,23 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* koko ruudun korkeus */
+}
+
+.main-content {
+  flex: 1; /* vie tilan footerin ja navin väliltä */
+}
+
+
 
 .navbar {
   background-color: #111;
@@ -121,14 +138,38 @@ img {
   }
 }
 
-
-
-footer {
+.footer {
   background-color: #111;
   color: white;
-  padding: 1rem;
   text-align: center;
-  font-size: 0.9rem;
+  padding: 2rem 1rem;
+  font-size: 0.95rem;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.sponsors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.sponsor-logo {
+  max-width: 150px;
+  object-fit: contain;
+  filter: brightness(1.1) contrast(1.2);
+}
+
+.footer a {
+  color: #ff4a4a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
 
 main {
@@ -138,11 +179,65 @@ main {
 }
 
 
+.contact-section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  margin-bottom: 0;
+}
+
+.contact-section h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #ff3b3b;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-section a {
+  color: #8B0000;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
+}
+
+.map-embed {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  max-width: 100vw;
+  overflow: hidden;
+
+}
+
+.map-embed iframe {
+  display: block;
+  width: 100%;
+  height: 350px;
+  border: none;
+  filter: grayscale(100%);
+}
+
+
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* 150px minimi, laajenee */
   gap: 16px;
-  padding: 16px;
+  padding: 16px; 
+}
+
+.gallery-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #ff3b3b;
 }
 
 .thumbnail {
@@ -205,7 +300,8 @@ main {
 
 .thumbnail-title {
   font-weight: 600;
-  margin-bottom: 0.25rem;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 1rem;
   font-size: 1rem;
 }
 
@@ -225,11 +321,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(246, 246, 246);
 }
 
 .thumbnail-wrapper:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  border-color: #007bff;
+  border-color: #607388;
 }
 .popup-close {
   position: absolute;
@@ -260,13 +357,13 @@ main {
   padding: 2rem;
   color: white;
   text-align: center;
-   /* Rajataan leveys max 1400px ja keskitetään */
-  max-width: 100vw; /* oletus, mobiilissa koko leveys */
+  max-width: 100vw;
   margin-left: 0;
   margin-right: 0;
   box-sizing: border-box;
   position: relative;
   z-index: 1;
+
 }
 .blurred-background {
   position: fixed; 
@@ -276,16 +373,40 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   filter: blur(20px);
-  z-index: -1; /* taustalle */
+  z-index: -1; 
 }
 
-/* Isommille näytöille tehdään rajaus */
+/* Isommille näytöille tehdään rajaus ja suurennetaan sisältöä */
 @media (min-width: 1400px) {
   .hero-section {
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
+    padding: 4rem; /* enemmän tyhjää reunoille */
   }
+
+  .hero-content {
+    max-width: 800px;
+    padding: 3rem;
+    border-radius: 16px;
+  }
+
+  .hero-content h1 {
+    font-size: 4rem !important;
+    margin-bottom: 1.45rem !important;
+  }
+
+  .hero-content h2 {
+    font-size: 1.7rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .hero-button {
+    font-size: 1.2rem;
+    padding: 1rem 2.2rem;
+    border-radius: 10px;
+  }
+
   .full-width {
     width: auto !important;
     max-width: 1400px !important;
@@ -295,7 +416,8 @@ main {
     left: auto !important;
     right: auto !important;
     overflow-x: visible !important;
-}
+  }
+  
 }
 
 .full-width {

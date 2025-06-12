@@ -71,7 +71,7 @@ function Gallery() {
     <section className="gallery-section">
       <h1 className="gallery-title">Kuvagalleria</h1>
       <p className="gallery-description">
-        Tänne tulee kuvia kausien varrelta. Päivitämme galleriaa silloin tällöin!
+        Kuvia kisoista ja kulisseista. Päivitämme galleriaa aika ajoin.
       </p>
 
       <div className="gallery-grid">
