@@ -560,7 +560,7 @@ html, body {
   max-width: 600px;
   width: 100%;
   margin: 1rem auto;
-  padding: 1rem;
+  padding: clamp(0.5rem, 2vw, 1rem);
   box-sizing: border-box;
   font-family: Arial, sans-serif;
   background: #fafafa;
@@ -662,10 +662,6 @@ html, body {
 }
 
 @media (max-width: 640px) {
-  .guestbook-wrapper {
-    padding: 0.8rem;
-    margin: 0.8rem;
-  }
   .guestbook-button {
     font-size: 1rem;
     padding: 0.5rem;
