@@ -556,3 +556,118 @@ html, body {
     visibility: hidden;
   }
 }
+ .guestbook-wrapper {
+  max-width: 600px;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.guestbook-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+  
+}
+
+.guestbook-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.guestbook-input,
+.guestbook-textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+    width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.guestbook-input:focus,
+.guestbook-textarea:focus {
+  border-color: #ff4a4a;
+  outline: none;
+  background: #fff;
+}
+
+.guestbook-button {
+  background-color: #ff4a4a;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.guestbook-button:hover {
+  background-color: #e53737;
+}
+
+.guestbook-messages {
+  margin-top: 2rem;
+}
+
+.guestbook-messages-title {
+  margin-bottom: 1rem;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.3rem;
+}
+
+.guestbook-no-messages {
+  color: #666;
+  font-style: italic;
+}
+
+.guestbook-message {
+  background: white;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  word-wrap: break-word;
+  overflow-wrap: break-word; 
+  word-break: break-word; 
+}
+
+.guestbook-message-name {
+  font-weight: 700;
+  color: #ff4a4a;
+  margin-bottom: 0.2rem;
+}
+
+.guestbook-message-timestamp {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 0.4rem;
+}
+
+.guestbook-message-text {
+  font-size: 1rem;
+  color: #222;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 640px) {
+  .guestbook-wrapper {
+    padding: 0.8rem;
+    margin: 0.8rem;
+  }
+  .guestbook-button {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}

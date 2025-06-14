@@ -19,6 +19,7 @@ function Navbar() {
         <li><NavLink to="/" className="nav-link" onClick={() => setIsOpen(false)}>Etusivu</NavLink></li>
         <li><NavLink to="/gallery" className="nav-link" onClick={() => setIsOpen(false)}>Kuvagalleria</NavLink></li>
         <li><NavLink to="/contact" className="nav-link" onClick={() => setIsOpen(false)}>Yhteystiedot</NavLink></li>
+        <li><NavLink to="/guestbook" className="nav-link" onClick={() => setIsOpen(false)}>Vieraskirja</NavLink></li>
       </ul>
     </nav>
   );

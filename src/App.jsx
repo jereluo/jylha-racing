@@ -6,6 +6,8 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact' 
+import Guestbook from './pages/Guestbook'
+
 
 
 function App() {
@@ -31,6 +33,7 @@ return (
           <Route path="/" element={<Home />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/guestbook" element={<Guestbook />} />
         </Routes>
       </main>
       <Footer />
